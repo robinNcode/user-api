@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-api/config/database"
-	"go-api/internal/models"
-	"go-api/internal/routes"
+	"user-api/internal/config"
+	"user-api/internal/models"
+	"user-api/internal/routes"
 )
 
 func main() {

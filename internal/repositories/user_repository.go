@@ -1,8 +1,8 @@
 package repositories
 
 import (
-	"go-api/internal/database"
-	"go-api/internal/models"
+	"user-api/internal/config"
+	"user-api/internal/models"
 )
 
 type UserRepository struct{}

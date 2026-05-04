@@ -1,8 +1,8 @@
 package services
 
 import (
-	"go-api/internal/models"
-	"go-api/internal/repositories"
+	"user-api/internal/models"
+	"user-api/internal/repositories"
 )
 
 type UserService struct {

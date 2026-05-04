@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"go-api/internal/models"
-	"go-api/internal/services"
+	"user-api/internal/models"
+	"user-api/internal/services"
 )
 
 type UserController struct {
@@ -28,7 +28,7 @@ func (uc UserController) Index(c *gin.Context) {
 func (uc UserController) Store(c *gin.Context) {
 	var user models.User
 
-	if err := c.ShouldBindJSON(&user); err != nil {
+	if err := c.ShouldBind(&user); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
